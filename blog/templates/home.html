@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Home {% endblock %} {% block body %}
+<section class="my-12">
+  <div class="flex items-center justify-between mb-8 gap-4">
+    {% comment %} <h2 class="text-3xl font-semibold">All Posts</h2> {% endcomment %}
+    {% comment %} {% include "components/header.html" %} {% endcomment %}
+    {% include "components/header.html" with title="All Posts"  %}
+    <div class="divider grow "></div>
+    <a href="{% url 'create_post' %}" class="btn btn-secondary">Create Post</a>
+    </div>
+  </div>
+  <div class="overflow-x-auto">
+    <form >
+      <div class="mb-4 flex items-center gap-2">
+        Action:
+         <select class="select select-bordered w-full max-w-xs" name="action" id="action">
+        <option disabled selected>-----------</option>
+        <option>Delete Selected Post</option>
+      </select>
+        <button class="btn btn-primary btn-sm ml-2">GO</button>
+      </div>
+      <table class="table">
+      <!-- head -->
+      <thead>
+        <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox" />
+            </label>
+          </th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Content</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for post in posts %}
+        <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox" value={{ post.id }} name="_selected_action" />
+            </label>
+          </th>
+          <td>{{ post.id }}</td>
+          <td>
+            <div class="avatar">
+              <div class="w-24 rounded-xl">
+                <img src="{{ post.image}}" alt="No Image Found" />
+              </div>
+            </div>
+          </td>
+          <td>{{ post.title }}</td>
+          <td>{{ post.content }}</td>
+          <th>
+            <a href="{% url "post_detail" pk=post.id %}" class="btn btn-ghost btn-xs"
+              >details</a
+            >
+            {% if user.is_authenticated %}
+            <a href={% url "update_post" pk=post.id %} class="btn btn-primary btn-xs">Update</a>
+            <a href={% url "delete_post" pk=post.id %} class="btn btn-error btn-xs">Delete</a>
+            {% endif %}
+          </th>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </form>
+  </div>
+</section>
+
+<script src={% static "main.js" %}></script>
+
+{% endblock %}

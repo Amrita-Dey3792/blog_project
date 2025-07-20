@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="bg-base-100 shadow-lg">
+        <div class="navbar max-w-screen-xl mx-auto">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Pages</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>About</a></li>
+              </ul>
+            </div>
+            <a href={% url "home" %} class="btn btn-ghost normal-case text-xl">LOGO</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li tabindex="0">
+                <details>
+                  <summary>Pages</summary>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            {% if user.is_authenticated %}
+            <form action={% url "logout" %} method="post">
+              {% csrf_token %}
+              <button class="btn btn-secondary">LOG OUT</button>
+            </form>
+            <a href={% url "profile" %} class="btn btn-success">MY PROFILE</a>
+            {% else %}
+            <a href={% url "login" %} class="btn btn-secondary">LOG IN</a>
+
+            {% endif %}
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="max-w-screen-xl mx-auto">
+      {% block body %}
+        <h3 class="text-2xl"> Hello Form Base Template </h3>
+      {% endblock body %}
+
+      {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} w-fit fixed top-[100px] left-1/2 transform -translate-x-1/2 z-50">
+              <span>{{ message }}</span>
+            </div>
+            {% endfor %}
+      {% endif %}
+    </main>
+    <footer class="bg-neutral">
+      <div class="max-w-screen-xl mx-auto footer p-10 text-neutral-content">
+        <nav>
+          <header class="footer-title">Services</header>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Company</header>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Legal</header>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

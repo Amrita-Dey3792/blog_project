@@ -1,0 +1,649 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2025-07-11T10:36:50.831Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "This is first post title",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2025-07-11T10:48:54.132Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Our first blog post from Ostad",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2025-07-11T11:15:16.321Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "Post 1 title",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2025-07-11T11:15:28.590Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "Post 2 title",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2025-07-11T11:15:40.379Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "4",
+            "object_repr": "Post 3 title",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2025-07-13T07:00:44.777Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "9",
+            "object_repr": "Understanding Django Models",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2025-07-15T13:31:05.517Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "20",
+            "object_repr": "This is  second blog post title",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2025-07-15T13:31:24.078Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "20",
+            "object_repr": "This is  second blog post title",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2025-07-15T13:34:03.479Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "20",
+            "object_repr": "This is  second blog post title (BANGLADESH)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2025-07-16T14:53:29.416Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "John Doe",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2025-07-16T14:53:48.945Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Jane Doe",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2025-07-16T15:37:42.306Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "17",
+            "object_repr": "This is my first post title",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2025-07-16T15:38:09.105Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "18",
+            "object_repr": "This is my second post title",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2025-07-16T15:38:30.227Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "19",
+            "object_repr": "This is my third post title",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add post",
+            "content_type": 7,
+            "codename": "add_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change post",
+            "content_type": 7,
+            "codename": "change_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete post",
+            "content_type": 7,
+            "codename": "delete_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view post",
+            "content_type": 7,
+            "codename": "view_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add author",
+            "content_type": 8,
+            "codename": "add_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change author",
+            "content_type": 8,
+            "codename": "change_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete author",
+            "content_type": 8,
+            "codename": "delete_author"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view author",
+            "content_type": 8,
+            "codename": "view_author"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$1000000$F8uUrVOfdmCvCaMHupWNcT$q6AeRoY/fSQ3N2PfwwezGGhv7N+g0Py1EnJ6KWD/Tn4=",
+            "last_login": "2025-07-16T15:53:07.629Z",
+            "is_superuser": true,
+            "username": "amrita",
+            "first_name": "",
+            "last_name": "",
+            "email": "amrita@example.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2025-07-11T10:35:36.005Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "blog",
+            "model": "post"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "blog",
+            "model": "author"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "12i2s8e6v69fr8wmfnx0z2elf9ceux1w",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCwlQGX7j0DGZgZqRpISrsy3l2bdKHb_977LxVxXUpcO89xInVWVh1-t4T5wXUDdMd6azq3usxT0puid9r1tRE_L7v7d1Cwl29t7OCFLRlib8WZowSfvWDwTgYGS-4kgwseiCGDACZARgo24ZhHEPX-AO7_OLY:1uc4RP:JWlAAZ4zG7hXOoGlRhe350Ap8of1wCr1PcraOzMPSqk",
+            "expire_date": "2025-07-30T15:53:07.635Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "i5oj04v9caqddwx34kuy3db0a3xn8a15",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCwlQGX7j0DGZgZqRpISrsy3l2bdKHb_977LxVxXUpcO89xInVWVh1-t4T5wXUDdMd6azq3usxT0puid9r1tRE_L7v7d1Cwl29t7OCFLRlib8WZowSfvWDwTgYGS-4kgwseiCGDACZARgo24ZhHEPX-AO7_OLY:1ub1DL:1pN3-ftQ4gFrdN1fXMPt8rIuxFqkBFG4NW6E6MnIs28",
+            "expire_date": "2025-07-27T18:14:15.135Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "v7b70lxurc7yl3aezdfrm69orq4usflk",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCwlQGX7j0DGZgZqRpISrsy3l2bdKHb_977LxVxXUpcO89xInVWVh1-t4T5wXUDdMd6azq3usxT0puid9r1tRE_L7v7d1Cwl29t7OCFLRlib8WZowSfvWDwTgYGS-4kgwseiCGDACZARgo24ZhHEPX-AO7_OLY:1uaqgo:EPtm_4mvYCTKNKhV004_C1svpfYKPinXuAZ6_-9IV-Q",
+            "expire_date": "2025-07-27T06:59:58.869Z"
+        }
+    },
+    {
+        "model": "blog.author",
+        "pk": 1,
+        "fields": {
+            "name": "John Doe",
+            "email": "john@doe.com"
+        }
+    },
+    {
+        "model": "blog.author",
+        "pk": 2,
+        "fields": {
+            "name": "Jane Doe",
+            "email": "jane@doe.com"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 9,
+        "fields": {
+            "author": 2,
+            "title": "Understanding Django Models (Updated)",
+            "content": "Django models are a powerful way to interact with your database using Python.",
+            "image": "media/images.jpeg",
+            "created_at": "2025-07-11T14:36:52.758Z"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 16,
+        "fields": {
+            "author": 2,
+            "title": "Understanding Django Models (New Post Title)",
+            "content": "Django models are a powerful way to interact with your database using Python. (New Post Content)",
+            "image": "media/Architecture-and-components.webp",
+            "created_at": "2025-07-13T18:08:00.941Z"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 17,
+        "fields": {
+            "author": 1,
+            "title": "This is my first post title",
+            "content": "This is my second post content",
+            "image": "",
+            "created_at": "2025-07-16T15:37:42.305Z"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 18,
+        "fields": {
+            "author": 1,
+            "title": "This is my second post title",
+            "content": "This is my second post content",
+            "image": "",
+            "created_at": "2025-07-16T15:38:09.103Z"
+        }
+    },
+    {
+        "model": "blog.post",
+        "pk": 19,
+        "fields": {
+            "author": 1,
+            "title": "This is my third post title",
+            "content": "This is my third post content",
+            "image": "",
+            "created_at": "2025-07-16T15:38:30.225Z"
+        }
+    }
+]

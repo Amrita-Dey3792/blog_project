@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}
+Create Post
+{% endblock %}
+
+{% block body %}
+<section class="my-16">
+    <h2 class="text-3xl font-semibold mb-8">
+        {% if form.instance.pk %}Update
+        {% else %}Create{% endif %}
+        Post</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-primary">SUBMIT</button>
+    </form>
+</section>
+{% endblock %}

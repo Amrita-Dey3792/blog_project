@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %} Post Details {% endblock %} 
+{% block body %}
+<section class="my-16">
+    <h2 class="text-3xl font-semibold mb-8">Post Details</h2>
+    <div class="mx-auto bg-white shadow-md rounded-lg p-6">
+        {% if post.image %}
+            <img class="w-full mb-8 rounded-xl" src={{  post.image.url }} alt="No Image Found">
+        {% endif %}
+        <h3 class="text-xl font-bold mb-4">{{ post.title }}</h3>
+        <p class="text-gray-700 mb-4">{{ post.content }}</p>
+        <p class="text-sm text-gray-500">Created at: {{ post.created_at }}</p>
+        <div class="mt-6">
+        <a href="/posts/{{ post.id }}/edit" class="btn btn-primary">Edit Post</a>
+        <a href="{% url "home" %}" class="btn btn-secondary ml-2">Back to Posts</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
